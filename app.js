@@ -9,6 +9,7 @@ function addTodo(){
     var li = document.createElement('li')
     var liText = document.createTextNode(todo_item.value)
     li.appendChild(liText)
+    localStorage.setItem('data',todo_item.value)
 
     //  create delete button
     var delBtn = document.createElement("button")

@@ -2,6 +2,40 @@ body{
     background-image: url(./bayc-mutant-hero.webp); 
 }
 
+.container{
+    margin-top: 100px;
+}
+
+#todo-item{
+    background-color: black;
+    color: white;
+    
+    font-size: 50px;
+    justify-self: flex-end;
+    width: 40%;
+ 
+    animation-name: shine;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes shine{
+    0%,100%{
+        box-shadow: 0px 0px 32px -12px rgba(246, 180, 0, .5);
+    }
+    50%{
+        box-shadow: 0px 0px 32px 3px rgba(246, 180, 0, .5);
+    }
+}
+
+button{
+   
+    background-color: black ;
+    color: #f4f4f4;
+    width: 200px ;
+    padding: 15px;
+    
+}
+
 li {
     color: white;
 }
